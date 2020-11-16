@@ -47,7 +47,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                     padding: EdgeInsets.only(top: 120),
                     child: Text(
                       //TODO: Passo 10 - Use o helper para obter a primeira questão e mostrá-la dentro do Widget Text.
-                      'Aqui serão exibidas questões, que para nossa situação podem ser perguntas ou definições de que casas são indicadas para os usuários.',
+                      helper.getQuestion(),
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25.0,
