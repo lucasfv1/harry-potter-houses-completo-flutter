@@ -11,4 +11,6 @@ class Question{
 
 }
 
-//Olá mundo, eu sou uma linha adicionada via commit.
+
+
+//A linha de cima que continha o "Olá mundo" foi removida.
