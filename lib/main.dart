@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'helper.dart';
+
 //TODO: Passo 15 - Execute o app e veja se você consegue ver a primeira questão sendo exibida na tela.
 
 void main() => runApp(HarryPotterHouses());
@@ -14,7 +16,7 @@ class HarryPotterHouses extends StatelessWidget {
 }
 
 //TODO: Passo 9 - Crie um novo objeto chamado helper utilizando a classe Helper.
-
+Helper helper = Helper();
 
 class HarryPoterPage extends StatefulWidget {
   _HarryPoterPageState createState() => _HarryPoterPageState();
