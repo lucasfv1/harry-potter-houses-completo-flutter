@@ -88,7 +88,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                   color: Colors.deepPurpleAccent,
                   child: Text(
                     //TODO: Passo 14 - Use o helper para obter o conteúdo textual da escolha 2 (choice2).
-                    'Escolha (choice) 2',
+                    helper.getChoice2(),
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
