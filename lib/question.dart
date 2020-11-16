@@ -10,7 +10,3 @@ class Question{
   Question({this.questionTitle, this.choice1, this.choice2});
 
 }
-
-
-
-//A linha de cima que continha o "Olá mundo" foi removida.
