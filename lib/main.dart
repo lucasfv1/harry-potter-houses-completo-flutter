@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//TODO: Etapa 15 - Execute o app e veja se você consegue ver a primeira questão sendo exibida na tela.
+//TODO: Passo 15 - Execute o app e veja se você consegue ver a primeira questão sendo exibida na tela.
 
 void main() => runApp(HarryPotterHouses());
 
@@ -13,7 +13,7 @@ class HarryPotterHouses extends StatelessWidget {
   }
 }
 
-//TODO: Etapa 9 - Crie um novo objeto chamado helper utilizando a classe Helper.
+//TODO: Passo 9 - Crie um novo objeto chamado helper utilizando a classe Helper.
 
 
 class HarryPoterPage extends StatefulWidget {
@@ -25,7 +25,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-    //TODO: Etapa 1 - Adicione uma imagem de fundo (background) para esse Container. Dica: utilize a imagem harrypotter.jpg que está dentro da pasta imagens.
+    //TODO: Passo 1 - Adicione uma imagem de fundo (background) para esse Container. Dica: utilize a imagem harrypotter.jpg que está dentro da pasta imagens.
         padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
         constraints: BoxConstraints.expand(),
         child: SafeArea(
@@ -38,7 +38,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                   child: Padding(
                     padding: EdgeInsets.only(top: 120),
                     child: Text(
-                      //TODO: Etapa 10 - Use o helper para obter a primeira questão e mostrá-la dentro do Widget Text.
+                      //TODO: Passo 10 - Use o helper para obter a primeira questão e mostrá-la dentro do Widget Text.
                       'Aqui serão exibidas questões, que para nossa situação podem ser perguntas ou definições de que casas são indicadas para os usuários.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -53,11 +53,11 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                 child: FlatButton(
                   onPressed: () {
                     //Escolha (choice) 1 feita pelo usuário.
-                    //TODO: Etapa 18 - Chame o método nextQuestion() do helper passando como parâmetro o número 1 que representa a escolha do usuário.
+                    //TODO: Passo 18 - Chame o método nextQuestion() do helper passando como parâmetro o número 1 que representa a escolha do usuário.
                   },
                   color: Colors.green,
                   child: Text(
-                    //TODO: Etapa 13 - Use o helper para obter o conteúdo textual da escolha 1 (choice1).
+                    //TODO: Passo 13 - Use o helper para obter o conteúdo textual da escolha 1 (choice1).
                     'Escolha (choice) 1',
                     style: TextStyle(
                       fontSize: 20.0,
@@ -70,16 +70,16 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
               ),
               Expanded(
                 flex: 2,
-                //TODO: Etapa 26 - Use o Widget Visibility deixando o FlatButton como seu filho.
-                //TODO: Etapa 28 - Altere a propriedade visible do Widget Visibility para uma chamada do método buttonShouldBeVisible do helper.
+                //TODO: Passo 26 - Use o Widget Visibility deixando o FlatButton como seu filho.
+                //TODO: Passo 28 - Altere a propriedade visible do Widget Visibility para uma chamada do método buttonShouldBeVisible do helper.
                 child: FlatButton(
                   onPressed: () {
                     //Escolha (choice) 2 feita pelo usuário.
-                    //TODO: Etapa 19 - Chame o método nextQuestion do helper e passe como parâmetro o número 2 que representa a escolha do usuário.
+                    //TODO: Passo 19 - Chame o método nextQuestion do helper e passe como parâmetro o número 2 que representa a escolha do usuário.
                   },
                   color: Colors.deepPurpleAccent,
                   child: Text(
-                    //TODO: Etapa 14 - Use o helper para obter o conteúdo textual da escolha 2 (choice2).
+                    //TODO: Passo 14 - Use o helper para obter o conteúdo textual da escolha 2 (choice2).
                     'Escolha (choice) 2',
                     style: TextStyle(
                       fontSize: 20.0,
@@ -95,6 +95,6 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
   }
 }
 
-//TODO: Etapa 24 - Execute o app e tente descobrir o que você precisa adicionar ao seu código para fazer com que a questão altere quando você pressionar em um dos botões de resposta.
+//TODO: Passo 24 - Execute o app e tente descobrir o que você precisa adicionar ao seu código para fazer com que a questão altere quando você pressionar em um dos botões de resposta.
 
-//TODO: Etapa 29 - Execute o app e teste para ver se tudo ficou funcionando perfeitamente.
+//TODO: Passo 29 - Execute o app e teste para ver se tudo ficou funcionando perfeitamente.
