@@ -47,6 +47,10 @@ class Helper{
     return _questionData[0].questionTitle;
   }
 
+  //TODO: Passo 11 - Crie um método chamado getChoice1() que retorna o conteúdo textual da choice1 (escolha1) para a primeira questão da lista _questionData.
+  String getChoice1(){
+    return _questionData[0].choice1;
+  }
 
 }
 
@@ -56,7 +60,7 @@ class Helper{
 
 //TODO: Passo 23 - Use o questionNumber,  dentro do getQuestion(), do getChoice1() e do getChoice2() para obter as opções atualizadas ao invés de sempre receber a primeira questão.
 
-//TODO: Passo 11 - Crie um método chamado getChoice1() que retorna o conteúdo textual para a primeira questão (choice1) da _questionData.
+
 
 //TODO: Passo 12 - Crie um método chamado getChoice2() que retorna a primeira questão (choice2) da _questionData.
 
