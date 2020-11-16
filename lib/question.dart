@@ -5,6 +5,9 @@ class Question{
   String questionTitle;
   String choice1;
   String choice2;
+
+  //TODO: Passo 4 - Crie um construtor para essa classe, para que seja possível inicializar as propriedades criadas no passo 3.
+  Question({this.questionTitle, this.choice1, this.choice2});
+
 }
 
-//TODO: Passo 4 - Crie um construtor para essa classe para que seja possível inicializar as propriedades criadas na etapa 3.
