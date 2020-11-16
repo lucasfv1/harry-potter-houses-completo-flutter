@@ -26,6 +26,12 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
     return Scaffold(
       body: Container(
     //TODO: Passo 1 - Adicione uma imagem de fundo (background) para esse Container. Dica: utilize a imagem harrypotter.jpg que está dentro da pasta imagens.
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('imagens/harrypotter.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
         padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
         constraints: BoxConstraints.expand(),
         child: SafeArea(
