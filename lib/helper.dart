@@ -1,8 +1,8 @@
-//TODO: Passo 6 - importe o questions.dart para esse arquivo.
+//TODO: Passo 6 - importe o question.dart para esse arquivo.
 
 //TODO: Passo 5 - Crie uma classe chamada Helper.
 
-//TODO: Passo 7 - Remova os comentários das linhas seguintes para habilitar a lista questionData dentro do arquivo helper.dart. Dica: pode ser necessário fazer alterações no questions.dart.
+//TODO: Passo 7 - Remova os comentários das linhas seguintes para habilitar a lista questionData dentro do arquivo helper.dart. Dica: pode ser necessário fazer alterações no question.dart.
 
   // List<Question> _questionData = [
   //   Question(
