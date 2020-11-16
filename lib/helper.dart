@@ -2,46 +2,51 @@
 import 'question.dart';
 
 //TODO: Passo 5 - Crie uma classe chamada Helper.
-class Helper{}
+class Helper{
 
-//TODO: Passo 7 - Remova os comentários das linhas seguintes para habilitar a lista questionData dentro do arquivo helper.dart. Dica: pode ser necessário fazer alterações no question.dart.
+  //TODO: Passo 7 - Remova os comentários das linhas seguintes para habilitar a lista questionData dentro do arquivo helper.dart.
+  List<Question> _questionData = [
+    Question(
+        questionTitle:
+        'Olá futuro bruxo(a)! Vamos descobrir qual é a casa ideal para você em Hogwarts? E a primeira questão é: com quais dos substantivos você se identifica mais?',
+        choice1: 'Coragem e gentileza',
+        choice2: 'Ambição e inteligência'),
+    Question(
+        questionTitle: 'Você prefere quebrar as regras e conquistar algo de forma rápida ou prefere utilizar a inteligência e estudar para então conquistar?',
+        choice1: 'Prefiro quebrar as regras',
+        choice2: 'Utilizo a inteligência e estudos'),
+    Question(
+        questionTitle:
+        'O que se encaixa melhor com o seu perfil?',
+        choice1: 'Ousadia e astúcia',
+        choice2: 'Paciência e sinceridade'),
+    Question(
+        questionTitle:
+        'Você ficará muito bem aos cuidados da SONSERINA',
+        choice1: 'Refazer teste',
+        choice2: ''),
+    Question(
+        questionTitle:
+        'Você ficará muito bem aos cuidados da LUFA-LUFA!',
+        choice1: 'Refazer teste',
+        choice2: ''),
+    Question(
+        questionTitle:
+        'Você ficará muito bem aos cuidados da GRIFINÓRIA!',
+        choice1: 'Refazer teste',
+        choice2: ''),
+    Question(
+        questionTitle:
+        'Você ficará muito bem aos cuidados da CORVINAL!',
+        choice1: 'Refazer teste',
+        choice2: '')
+  ];
 
-  // List<Question> _questionData = [
-  //   Question(
-  //       questionTitle:
-  //       'Olá futuro bruxo(a)! Vamos descobrir qual é a casa ideal para você em Hogwarts? E a primeira questão é: com quais dos substantivos você se identifica mais?',
-  //       choice1: 'Coragem e gentileza',
-  //       choice2: 'Ambição e inteligência'),
-  //   Question(
-  //       questionTitle: 'Você prefere quebrar as regras e conquistar algo de forma rápida ou prefere utilizar a inteligência e estudar para então conquistar?',
-  //       choice1: 'Prefiro quebrar as regras',
-  //       choice2: 'Utilizo a inteligência e estudos'),
-  //   Question(
-  //       questionTitle:
-  //       'O que se encaixa melhor com o seu perfil?',
-  //       choice1: 'Ousadia e astúcia',
-  //       choice2: 'Paciência e sinceridade'),
-  //   Question(
-  //       questionTitle:
-  //       'Você ficará muito bem aos cuidados da SONSERINA',
-  //       choice1: 'Refazer teste',
-  //       choice2: ''),
-  //   Question(
-  //       questionTitle:
-  //       'Você ficará muito bem aos cuidados da LUFA-LUFA!',
-  //       choice1: 'Refazer teste',
-  //       choice2: ''),
-  //   Question(
-  //       questionTitle:
-  //       'Você ficará muito bem aos cuidados da GRIFINÓRIA!',
-  //       choice1: 'Refazer teste',
-  //       choice2: ''),
-  //   Question(
-  //       questionTitle:
-  //       'Você ficará muito bem aos cuidados da CORVINAL!',
-  //       choice1: 'Refazer teste',
-  //       choice2: '')
-  // ];
+}
+
+
+
+
 
 //TODO: Passo 23 - Use o questionNumber,  dentro do getQuestion(), do getChoice1() e do getChoice2() para obter as opções atualizadas ao invés de sempre receber a primeira questão.
 
