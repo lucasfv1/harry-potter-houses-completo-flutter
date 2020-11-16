@@ -66,7 +66,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                   color: Colors.green,
                   child: Text(
                     //TODO: Passo 13 - Use o helper para obter o conteúdo textual da escolha 1 (choice1).
-                    'Escolha (choice) 1',
+                    helper.getChoice1(),
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
