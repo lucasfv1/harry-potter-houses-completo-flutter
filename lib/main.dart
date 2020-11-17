@@ -83,20 +83,22 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                 flex: 2,
                 //TODO: Passo 26 - Use o Widget Visibility deixando o FlatButton como seu filho.
                 //TODO: Passo 28 - Altere a propriedade visible do Widget Visibility para uma chamada do método buttonShouldBeVisible do helper.
-                child: FlatButton(
-                  onPressed: () {
-                    //Escolha (choice) 2 feita pelo usuário.
-                    //TODO: Passo 19 - Chame o método nextQuestion do helper e passe como parâmetro o número 2 que representa a escolha do usuário.
-                    setState(() {
-                      helper.nextQuestion(2);
-                    });
-                  },
-                  color: Colors.deepPurpleAccent,
-                  child: Text(
-                    //TODO: Passo 14 - Use o helper para obter o conteúdo textual da escolha 2 (choice2).
-                    helper.getChoice2(),
-                    style: TextStyle(
-                      fontSize: 20.0,
+                child: Visibility(
+                  child: FlatButton(
+                    onPressed: () {
+                      //Escolha (choice) 2 feita pelo usuário.
+                      //TODO: Passo 19 - Chame o método nextQuestion do helper e passe como parâmetro o número 2 que representa a escolha do usuário.
+                      setState(() {
+                        helper.nextQuestion(2);
+                      });
+                    },
+                    color: Colors.deepPurpleAccent,
+                    child: Text(
+                      //TODO: Passo 14 - Use o helper para obter o conteúdo textual da escolha 2 (choice2).
+                      helper.getChoice2(),
+                      style: TextStyle(
+                        fontSize: 20.0,
+                      ),
                     ),
                   ),
                 ),
