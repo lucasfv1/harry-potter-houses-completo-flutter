@@ -62,7 +62,9 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                   onPressed: () {
                     //Escolha (choice) 1 feita pelo usuário.
                     //TODO: Passo 18 - Chame o método nextQuestion() do helper passando como parâmetro o número 1 que representa a escolha do usuário.
-                    helper.nextQuestion(1);
+                    setState(() {
+                      helper.nextQuestion(1);
+                    });
                   },
                   color: Colors.green,
                   child: Text(
@@ -85,7 +87,9 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                   onPressed: () {
                     //Escolha (choice) 2 feita pelo usuário.
                     //TODO: Passo 19 - Chame o método nextQuestion do helper e passe como parâmetro o número 2 que representa a escolha do usuário.
-                    helper.nextQuestion(2);
+                    setState(() {
+                      helper.nextQuestion(2);
+                    });
                   },
                   color: Colors.deepPurpleAccent,
                   child: Text(
