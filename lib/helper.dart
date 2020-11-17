@@ -46,46 +46,48 @@ class Helper{
 
   //TODO: Passo 8 - Crie um método chamado getQuestion() que irá retornar a primeira questão da lista _questionData.
   String getQuestion(){
-    return _questionData[questionNumber].questionTitle;
+    return _questionData[_questionNumber].questionTitle;
   }
 
   //TODO: Passo 11 - Crie um método chamado getChoice1() que retorna o conteúdo textual da choice1 (escolha1) para a primeira questão da lista _questionData.
   String getChoice1(){
-    return _questionData[questionNumber].choice1;
+    return _questionData[_questionNumber].choice1;
   }
 
   //TODO: Passo 12 - Crie um método chamado getChoice2() que retorna a conteúdo textual da choice2 (escolha2) para a primeira questão da lista _questionData.
   String getChoice2(){
-    return _questionData[questionNumber].choice2;
+    return _questionData[_questionNumber].choice2;
   }
 
   //TODO: Passo 16 - Crie uma variável chamada questionNumber que recebe 0 (zero) como valor inicial. Ela servirá para mostrar qual questão está sendo exibida na tela para o usuário.
-  int questionNumber = 0;
+
+  //TODO: Passo 25 - Altere a propriedade questionNumber para que esta seja privada, assim somente o helper.dart terá acesso direto a ela. Dica: você pode fazer isso clicando com o botão direito do mouse sobre o nome (questionNumber) e então selecionando a opção Refactor e na sequência Rename. Isso fará com que as alterações sejam aplicadas no escopo inteiro do projeto, ou seja, em todo local que está propriedade está sendo utilizada.
+  int _questionNumber = 0;
 
   //TODO: Passo 17 - Crie um método chamado nextQuestion. Ele não irá retornar nada, porém, ele deve receber como parâmetro um inteiro que pode ser chamado de userChoice e que receberá um número que representa a escolha do usuário.
   void nextQuestion(int userChoice){
   //TODO: Passo 21 - Utilizando o fluxograma que você baixou modifique o método nextQuestion() para alterar o questionNumber de acordo com a escolha(choice) feita pelo usuário.
-    if (userChoice == 1 && questionNumber == 0) {
-      questionNumber = 2;
-    } else if (userChoice == 2 && questionNumber == 0) {
-      questionNumber = 1;
-    } else if (userChoice == 1 && questionNumber == 1) {
-      questionNumber = 3;
-    } else if (userChoice == 2 && questionNumber == 1) {
-      questionNumber = 6;
-    } else if (userChoice == 1 && questionNumber == 2) {
-      questionNumber = 5;
-    } else if (userChoice == 2 && questionNumber == 2) {
-      questionNumber = 4;
+    if (userChoice == 1 && _questionNumber == 0) {
+      _questionNumber = 2;
+    } else if (userChoice == 2 && _questionNumber == 0) {
+      _questionNumber = 1;
+    } else if (userChoice == 1 && _questionNumber == 1) {
+      _questionNumber = 3;
+    } else if (userChoice == 2 && _questionNumber == 1) {
+      _questionNumber = 6;
+    } else if (userChoice == 1 && _questionNumber == 2) {
+      _questionNumber = 5;
+    } else if (userChoice == 2 && _questionNumber == 2) {
+      _questionNumber = 4;
     }
     //TODO: Passo 22 - No método nextQuestion se a questionNumber for igual a 3,4,5 ou 6 o usuário chegou ao final das questões e recebeu a resposta de qual casa é mais parecida com o perfil dele. Faça então uma chamada para um método restart() que servirá para reiniciar as questões modificando o valor de questionNumber para 0 (zero)
-    else if (questionNumber == 3 || questionNumber == 4 || questionNumber == 5 || questionNumber == 6) {
+    else if (_questionNumber == 3 || _questionNumber == 4 || _questionNumber == 5 || _questionNumber == 6) {
       restart();
     }
   }
 
   void restart(){
-    questionNumber = 0;
+    _questionNumber = 0;
   }
 
 }
@@ -100,7 +102,7 @@ class Helper{
 
 
 
-//TODO: Passo 25 - Altere a propriedade questionNumber para que esta seja privada, assim somente o helper.dart terá acesso direto a ela. Dica: você pode fazer isso clicando com o botão direito do mouse sobre o nome (questionNumber) e então selecionando a opção Refactor e na sequência Rename. Isso fará com que as alterações sejam aplicadas no escopo inteiro do projeto, ou seja, em todo local que está propriedade está sendo utilizada.
+
 
 
 
