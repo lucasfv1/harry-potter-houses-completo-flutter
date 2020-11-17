@@ -61,7 +61,23 @@ class Helper{
   int questionNumber = 0;
 
   //TODO: Passo 17 - Crie um método chamado nextQuestion. Ele não irá retornar nada, porém, ele deve receber como parâmetro um inteiro que pode ser chamado de userChoice e que receberá um número que representa a escolha do usuário.
-  void nextQuestion(int userChoice){}
+  void nextQuestion(int userChoice){
+  //TODO: Passo 21 - Utilizando o fluxograma que você baixou modifique o método nextQuestion() para alterar o questionNumber de acordo com a escolha(choice) feita pelo usuário.
+    if (userChoice == 1 && questionNumber == 0) {
+      questionNumber = 2;
+    } else if (userChoice == 2 && questionNumber == 0) {
+      questionNumber = 1;
+    } else if (userChoice == 1 && questionNumber == 1) {
+      questionNumber = 3;
+    } else if (userChoice == 2 && questionNumber == 1) {
+      questionNumber = 6;
+    } else if (userChoice == 1 && questionNumber == 2) {
+      questionNumber = 5;
+    } else if (userChoice == 2 && questionNumber == 2) {
+      questionNumber = 4;
+    }
+
+  }
 
 }
 
@@ -83,7 +99,7 @@ class Helper{
 
 //TODO: Passo 20 - Faça download do fluxograma com as sequências para os possíveis resultados: https://drive.google.com/file/d/1vOI-Jr0Brp1LIQ7CDB8Y03PykWhWBmA2
 
-//TODO: Passo 21 - Utilizando o fluxograma que você baixou modifique o método nextQuestion() para alterar o questionNumber de acordo com a escolha(choice) feita pelo usuário.
+
 
 //TODO: Passo 22 - No método nextQuestion se a questionNumber for igual a 3,4,5 ou 6 o usuário chegou ao final das questões e recebeu a resposta de qual casa é mais parecida com o perfil dele. Faça então uma chamada para um método restart() que servirá para reiniciar as questões modificando o valor de questionNumber para 0 (zero)
 
