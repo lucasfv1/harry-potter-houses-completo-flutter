@@ -42,19 +42,21 @@ class Helper{
         choice2: '')
   ];
 
+  //TODO: Passo 23 - Use o questionNumber,  dentro do getQuestion(), do getChoice1() e do getChoice2() para obter as opções atualizadas ao invés de sempre receber a primeira questão.
+
   //TODO: Passo 8 - Crie um método chamado getQuestion() que irá retornar a primeira questão da lista _questionData.
   String getQuestion(){
-    return _questionData[0].questionTitle;
+    return _questionData[questionNumber].questionTitle;
   }
 
   //TODO: Passo 11 - Crie um método chamado getChoice1() que retorna o conteúdo textual da choice1 (escolha1) para a primeira questão da lista _questionData.
   String getChoice1(){
-    return _questionData[0].choice1;
+    return _questionData[questionNumber].choice1;
   }
 
   //TODO: Passo 12 - Crie um método chamado getChoice2() que retorna a conteúdo textual da choice2 (escolha2) para a primeira questão da lista _questionData.
   String getChoice2(){
-    return _questionData[0].choice2;
+    return _questionData[questionNumber].choice2;
   }
 
   //TODO: Passo 16 - Crie uma variável chamada questionNumber que recebe 0 (zero) como valor inicial. Ela servirá para mostrar qual questão está sendo exibida na tela para o usuário.
@@ -92,7 +94,7 @@ class Helper{
 
 
 
-//TODO: Passo 23 - Use o questionNumber,  dentro do getQuestion(), do getChoice1() e do getChoice2() para obter as opções atualizadas ao invés de sempre receber a primeira questão.
+
 
 
 
