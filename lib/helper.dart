@@ -76,7 +76,14 @@ class Helper{
     } else if (userChoice == 2 && questionNumber == 2) {
       questionNumber = 4;
     }
+    //TODO: Passo 22 - No método nextQuestion se a questionNumber for igual a 3,4,5 ou 6 o usuário chegou ao final das questões e recebeu a resposta de qual casa é mais parecida com o perfil dele. Faça então uma chamada para um método restart() que servirá para reiniciar as questões modificando o valor de questionNumber para 0 (zero)
+    else if (questionNumber == 3 || questionNumber == 4 || questionNumber == 5 || questionNumber == 6) {
+      restart();
+    }
+  }
 
+  void restart(){
+    questionNumber = 0;
   }
 
 }
@@ -101,7 +108,7 @@ class Helper{
 
 
 
-//TODO: Passo 22 - No método nextQuestion se a questionNumber for igual a 3,4,5 ou 6 o usuário chegou ao final das questões e recebeu a resposta de qual casa é mais parecida com o perfil dele. Faça então uma chamada para um método restart() que servirá para reiniciar as questões modificando o valor de questionNumber para 0 (zero)
+
 
 //TODO: Passo 27 - Crie um método chamado buttonShouldBeVisible() que irá checar se o questionNumber é 0, 1 ou 2. Se ess for o caso, o método deverá retornar true indicando que os dois botões mostram uma opção. Caso contrário deverá ser retornado false.
 
