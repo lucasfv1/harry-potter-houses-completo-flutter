@@ -62,6 +62,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                   onPressed: () {
                     //Escolha (choice) 1 feita pelo usuário.
                     //TODO: Passo 18 - Chame o método nextQuestion() do helper passando como parâmetro o número 1 que representa a escolha do usuário.
+                    helper.nextQuestion(1);
                   },
                   color: Colors.green,
                   child: Text(
