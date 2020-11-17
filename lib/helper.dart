@@ -90,6 +90,15 @@ class Helper{
     _questionNumber = 0;
   }
 
+  //TODO: Passo 27 - Crie um método chamado buttonShouldBeVisible() que irá checar se o questionNumber é 0, 1 ou 2. Se ess for o caso, o método deverá retornar true indicando que os dois botões mostram uma opção. Caso contrário deverá ser retornado false.
+  bool buttonShouldBeVisible(){
+    if(_questionNumber == 0 || _questionNumber == 1 || _questionNumber == 2){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
 }
 
 
@@ -114,5 +123,5 @@ class Helper{
 
 
 
-//TODO: Passo 27 - Crie um método chamado buttonShouldBeVisible() que irá checar se o questionNumber é 0, 1 ou 2. Se ess for o caso, o método deverá retornar true indicando que os dois botões mostram uma opção. Caso contrário deverá ser retornado false.
+
 
