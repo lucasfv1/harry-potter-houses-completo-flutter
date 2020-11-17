@@ -84,6 +84,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                 //TODO: Passo 26 - Use o Widget Visibility deixando o FlatButton como seu filho.
                 //TODO: Passo 28 - Altere a propriedade visible do Widget Visibility para uma chamada do método buttonShouldBeVisible do helper.
                 child: Visibility(
+                  visible: helper.buttonShouldBeVisible(),
                   child: FlatButton(
                     onPressed: () {
                       //Escolha (choice) 2 feita pelo usuário.
